@@ -1,0 +1,64 @@
+.filter {
+  background: $main;
+  padding: 45px 0 55px 0;
+  h5 {
+    margin-bottom: 50px;
+  }
+  .check__row {
+    margin-bottom: 50px;
+  }
+  &__inner {
+    &-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      .input {
+        width: calc(50% - 10px);
+        max-width: 530px;
+      }
+      .button {
+        width: calc(50% - 10px);
+        max-width: 530px;
+      }
+    }
+  }
+}
+@mixin filter-xxxlg-xxxxlg {
+  .filter {
+    h5 {
+      margin-bottom: 35px;
+    }
+    .check__row {
+      margin-bottom: 35px;
+    }
+    &__inner {
+      &-row {
+        .input {
+          max-width: 400px;
+        }
+        .button {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+@mixin filter-xsm-sm {
+  .filter {
+    &__inner {
+      &-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .input,
+      .button {
+        width: 100%;
+        margin: 0 0 20px 0;
+        max-width: unset;
+      }
+      .button {
+        margin: 0;
+      }
+    }
+  }
+}

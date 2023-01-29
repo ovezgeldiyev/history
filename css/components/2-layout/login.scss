@@ -1,0 +1,209 @@
+.login {
+    padding: 30px 0 260px;
+    &__inner {
+        max-width: 1090px;
+        margin: 0 auto;
+        &-form {
+            display: flex;
+            flex-direction: column;
+            background-color: $main;
+            padding: 55px 140px 68px;
+            margin-bottom: 30px;
+            a {
+                margin-bottom: 18px;
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: $text-color;
+                @include transition;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+        h4 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .input {
+            margin: 18px 0;
+            position: relative;
+            input {
+                padding: 14px 8px;
+
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 38px;
+                height: 23px;
+                position: absolute;
+                top: 50%;
+                right: 18px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: $black;
+                    &.eye-closed {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        @include transition;
+                    }
+                }
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                    z-index: 2;
+                    &:checked {
+                        ~ svg {
+                            &.eye-closed {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .button {
+            background-color: $white;
+        }
+        .back {
+            text-decoration: none;
+        }
+    }
+}
+@mixin login-xxxlg-xxxxlg {
+    .login {
+        padding: 20px 0 220px;
+        &__inner {
+            .button {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+@mixin login-xxlg-xxxlg {
+    .login {
+        padding: 20px 0 180px;
+
+    }
+}
+@mixin login-xlg-xxlg {
+    .login {
+        padding: 20px 0 140px;
+
+    }
+}
+@mixin login-lg-xlg {
+    .login {
+        padding: 20px 0 100px;
+        &__inner {
+            &-form {
+                padding: 40px 90px 60px;
+            }
+            h4 {
+                margin-bottom: 16px;
+            }
+            .input {
+                span {
+                    width: 34px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+@mixin login-md-lg {
+    .login {
+        padding: 20px 0 60px;
+        &__inner {
+            &-form {
+                padding: 35px 50px 50px;
+                margin-bottom: 25px;
+                a {
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .input {
+                margin: 15px 0;
+                input {
+                    padding: 12px 8px;
+                }
+            }
+            .button {
+                padding: 12px;
+            }
+        }
+    }
+}
+@mixin login-sm-md {
+    .login {
+        padding: 20px 0 50px;
+        &__inner {
+            &-form {
+                padding: 25px 30px 35px;
+                margin-bottom: 20px;
+                a {
+                    margin-bottom: 12px;
+                }
+            }
+            h4 {
+                margin-bottom: 10px;
+            }
+            .input {
+                margin: 12px 0;
+            }
+        }
+
+    }
+}
+@mixin login-xsm-sm {
+    .login {
+        padding: 0 0 40px;
+        &__inner {
+            &-form {
+                padding: 18px 10px 22px;
+                a {
+                    margin-bottom: 10px;
+                }
+            }
+            h4 {
+                margin-bottom: 10px;
+                font-size: 19px;
+                line-height: 25px;
+            }
+            .input {
+                margin: 10px 0;
+                input {
+                    padding: 10px 8px;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+                span {
+                    width: 28px;
+                    height: 16px;
+                }
+            }
+            .button {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 10px;
+            }
+        }
+
+    }
+}

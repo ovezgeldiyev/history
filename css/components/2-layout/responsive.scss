@@ -1,0 +1,739 @@
+// 1580px
+@include xxxxlg-xxxxxlg {
+  @include team-xxxxlg-xxxxxlg;
+}
+
+// 1460px
+@include xxxlg-xxxxlg {
+  @include header-xxxlg-xxxxlg;
+  @include nav-xxxlg-xxxxlg;
+  @include team-xxxlg-xxxxlg;
+  @include blog-xxxlg-xxxxlg;
+  @include winner-xxxlg-xxxxlg;
+  @include filter-xxxlg-xxxxlg;
+  @include history-xxxlg-xxxxlg;
+  @include login-xxxlg-xxxxlg;
+
+  main {
+    margin-top: 167.72px;
+    &.sm {
+      min-height: calc(100vh - 439.72px);
+    }
+  }
+
+  .banner {
+    &.prize {
+      .banner__inner {
+        &-content {
+          padding: 60px 60px 80px 0;
+        }
+      }
+    }
+
+    &__inner {
+      &-content {
+        padding: 60px 60px 60px 0;
+      }
+    }
+  }
+
+  .check {
+    label {
+      font-size: 16px;
+      line-height: 18px;
+      padding-left: 40px;
+
+      &::before {
+        width: 24px;
+        height: 24px;
+      }
+
+      &:after {
+        height: 10px;
+        width: 5px;
+        left: 8px;
+        border-bottom: 3px solid $white;
+        border-right: 3px solid $white;
+      }
+    }
+  }
+
+  .input {
+    label {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    input {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    textarea {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .back {
+    font-size: 19px;
+    line-height: 25px;
+    &__icon {
+      width: 42px;
+      height: 42px;
+
+      img {
+        width: 14px
+      }
+    }
+  }
+
+  .anchor {
+    width: 44px;
+    height: 44px;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .banner {
+    .custom_paging {
+      bottom: -56px;
+      right: 60px;
+
+      li {
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+
+    &__footer {
+      max-width: 180px;
+      bottom: -60px;
+
+      button {
+        width: 44px;
+        height: 44px;
+
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+
+// 1340px
+@include xxlg-xxxlg {
+
+  h1,
+  h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-size: 21px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  h5 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  h6 {
+    font-size: 16px;
+    line-height: 22px;
+
+    small {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  p.sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main {
+    &.sm {
+      min-height: calc(100vh - 415.72px);
+    }
+  }
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .back {
+    font-size: 17px;
+    line-height: 22px;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+
+      img {
+        width: 12px;
+      }
+    }
+  }
+
+  .anchor {
+    width: 34px;
+    height: 34px;
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .banner {
+    .custom_paging {
+      bottom: -55px;
+      right: 46px;
+
+      li {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+
+    &__footer {
+      max-width: 150px;
+      bottom: -60px;
+
+      button {
+        width: 34px;
+        height: 34px;
+
+        img {
+          width: 12px;
+        }
+      }
+    }
+  }
+
+  @include blog-xxlg-xxxlg;
+  @include post-xxlg-xxxlg;
+  @include team-xxlg-xxxlg;
+  @include winner-xxlg-xxxlg;
+  @include history-xxlg-xxxlg;
+  @include login-xxlg-xxxlg;
+
+}
+
+// 1240px
+@include xlg-xxlg {
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include winner-xlg-xxlg;
+  @include team-xlg-xxlg;
+  @include login-xlg-xxlg;
+
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  main {
+    margin-top: 146.57px;
+    &.sm {
+      min-height: calc(100vh - 394.57px);
+    }
+  }
+
+  .overlay {
+    padding: 34px 24px 100px;
+
+    h4 {
+      margin-bottom: 30px;
+    }
+
+    .input {
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner {
+    margin-bottom: 150px;
+
+    &.prize {
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .banner__inner {
+        &-content {
+          padding: 40px 30px 40px 0;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    &__image {
+      width: calc(50% - 8px);
+      left: calc(50% + 8px);
+
+      &-rights {
+        left: 10px;
+      }
+    }
+
+    &::before {
+      width: calc(50% - 8px);
+    }
+
+    &__inner {
+      &-content {
+        width: calc(50% - 8px);
+        padding: 30px 30px 30px 0;
+      }
+    }
+
+    &Slider {
+      width: calc(50% - 8px);
+      left: calc(50% + 8px);
+    }
+
+    &__footer {
+      margin-right: 30px;
+    }
+
+    .custom_paging {
+      margin-right: 30px;
+    }
+  }
+}
+
+// 1024px
+@include lg-xlg {
+  @include post-lg-xlg;
+  @include winner-lg-xlg;
+  @include team-lg-xlg;
+  @include history-lg-xlg;
+  @include login-lg-xlg;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .overlay {
+    padding: 24px 24px 95px;
+
+    &.event {
+      padding: 40px 20px 130px;
+
+      .closeBtn {
+        bottom: 40px;
+      }
+
+      .input {
+        &:last-of-type {
+          margin-bottom: 35px;
+        }
+
+        &:nth-child(3) {
+          width: calc(50% - 7px);
+        }
+
+        &:nth-child(4) {
+          width: calc(50% - 7px);
+        }
+
+        input {
+          width: calc(100% - 175px);
+        }
+
+        span {
+          width: 16px;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    .input {
+      margin-bottom: 24px;
+    }
+
+    .closeBtn {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .banner {
+    margin-bottom: 110px;
+
+    &.prize {
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        max-width: unset;
+      }
+
+      .banner__inner {
+        &-content {
+          padding: 60px 0 60px 0;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: unset;
+    }
+
+    &__image {
+      width: 100%;
+      position: unset;
+      max-width: unset;
+    }
+
+    &::before {
+      width: 100%;
+    }
+
+    &__inner {
+      &-content {
+        width: 100%;
+        max-width: unset;
+        padding: 60px 0 60px 0;
+      }
+    }
+
+    &Slider {
+      width: 100%;
+      max-width: unset;
+      position: unset !important;
+    }
+
+    &__footer {
+      margin-right: 30px;
+    }
+
+    .custom_paging {
+      right: 48px;
+      bottom: -57px;
+      margin-right: 30px;
+    }
+
+    .slick {
+      &-list {
+        padding: 0;
+      }
+
+      &-slider {
+        margin-bottom: 120px !important;
+      }
+    }
+  }
+}
+
+// 900px
+@include md-lg {
+  @include nav-md-lg;
+  @include post-md-lg;
+  @include blog-md-lg;
+  @include team-md-lg;
+  @include login-md-lg;
+  @include footer-md-lg;
+
+  main {
+    &.sm {
+      min-height: calc(100vh - 422.57px);
+    }
+  }
+  .overlay {
+    padding: 24px 24px 80px;
+
+    .closeBtn {
+      width: 45px;
+      height: 45px;
+      bottom: 20px;
+    }
+  }
+
+  .input {
+    textarea {
+      height: 80px;
+
+      &.big {
+        height: 120px;
+      }
+    }
+  }
+
+  p {
+    &.sm {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+// 700px
+@include sm-md {
+  .auto__container {
+    padding: 0 18px;
+  }
+
+  .overlay {
+    padding: 20px 18px 80px;
+
+    &.event {
+      padding: 25px 15px 100px;
+
+      .input {
+        &:last-of-type {
+          margin-bottom: 24px;
+        }
+
+        &:nth-child(3) {
+          width: calc(50% - 4px);
+        }
+
+        &:nth-child(4) {
+          width: calc(50% - 4px);
+        }
+
+        input {
+          width: calc(100% - 145px);
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        label {
+          margin-right: 10px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        span {
+          width: 12px;
+        }
+      }
+
+      .closeBtn {
+        bottom: 25px;
+      }
+    }
+
+    .closeBtn {
+      bottom: 18px;
+    }
+
+    h4 {
+      margin-bottom: 16px;
+    }
+
+    .input {
+      margin-bottom: 18px;
+    }
+  }
+
+  .input {
+    textarea {
+      height: 65px;
+
+      &.big {
+        height: 95px;
+      }
+    }
+  }
+
+  .back {
+    font-size: 14px;
+    line-height: 18px;
+
+    &.next {
+      .back__icon {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+
+  .anchor {
+    right: 18px;
+
+    &.active {
+      bottom: 18px;
+    }
+  }
+
+  .banner {
+    margin-bottom: 80px;
+
+    &.prize {
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__image {
+      &-rights {
+        font-size: 9px;
+        line-height: 12px;
+      }
+    }
+
+    &__footer {
+      margin-right: 18px;
+    }
+
+    .custom_paging {
+      margin-right: 18px;
+    }
+  }
+
+  h1,
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  @include post-sm-md;
+  @include winner-sm-md;
+  @include team-sm-md;
+  @include history-sm-md;
+  @include login-sm-md;
+
+}
+
+// 540px
+@include xsm-sm {
+  body {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .check__row {
+    flex-direction: column;
+  }
+
+  .overlay {
+    padding: 20px 18px 70px;
+
+    &.event {
+      padding: 20px 18px 80px;
+
+      .closeBtn {
+        bottom: 15px;
+      }
+
+      .input {
+        &:nth-child(3) {
+          width: 100%;
+        }
+
+        &:nth-child(4) {
+          width: 100%;
+        }
+      }
+    }
+
+    .closeBtn {
+      width: 38px;
+      height: 38px;
+    }
+
+    button {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 10px 8px;
+    }
+
+    .input {
+      &:last-of-type {
+        width: 65%;
+      }
+
+      input {
+        padding: 10px 8px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      textarea {
+        padding: 9px 8px;
+
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .banner {
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    &.prize {
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .banner__inner {
+        &-content {
+          padding: 40px 0 50px;
+        }
+      }
+    }
+
+    &__inner {
+      &-content {
+        padding: 40px 0;
+      }
+    }
+
+    &__image {
+      &-rights {
+        font-size: 7px;
+        line-height: 9px;
+      }
+    }
+  }
+
+  @include filter-xsm-sm;
+  @include post-xsm-sm;
+  @include team-xsm-sm;
+  @include winner-xsm-sm;
+  @include blog-xsm-sm;
+  @include login-xsm-sm;
+
+}

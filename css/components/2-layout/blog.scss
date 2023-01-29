@@ -1,0 +1,282 @@
+.blog {
+  padding: 110px 0 200px;
+  &.events {
+    padding: 70px 0 90px;
+  }
+  &.press {
+    .blogItem {
+      &__header {
+        border-bottom: unset;
+      }
+    }
+  }
+  &.main {
+    margin-top: -110px;
+    padding: 200px 0 56px;
+    background-color: $main;
+    .blogItem__body {
+      a {
+        &:hover {
+          opacity: .8;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  &__inner {
+    margin: 0 -15px;
+    position: relative;
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px auto 0 auto;
+      max-width: 250px;
+      button {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        background: $white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+        @include transition;
+        &:hover {
+          background: #f7f7f7;
+        }
+        img {
+          width: 18px;
+        }
+      }
+    }
+    .back {
+      position: absolute;
+      bottom: 0;
+      right: 14px;
+      &__icon {
+        margin: 0 0 0 16px;
+      }
+    }
+  }
+  .title {
+    margin: 0 15px 60px 15px;
+  }
+  &Item {
+    margin-left: 15px;
+    margin-right: 15px;
+    &__header {
+      padding: 15px 0 28px 0;
+      border-top: 2px solid $black;
+      border-bottom: 2px solid $black;
+      margin-bottom: 38px;
+      h4 {
+        height: 64px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    &__body {
+      padding-bottom: 30px;
+      border-bottom: 2px solid $black;
+      h6 {
+        margin-bottom: 24px;
+        height: 88px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 55%;
+        img {
+          top: 0;
+          left: 0;
+          position: absolute;
+          @include fullImage;
+        }
+      }
+      p {
+        height: 88px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 24px;
+      }
+      a {
+        display: block;
+        font-weight: 300;
+        color: $text-color;
+        @include transition;
+        &:hover {
+          color: $main;
+        }
+      }
+      &-more {
+        margin-bottom: 40px;
+        font-size: 21px;
+        line-height: 28px;
+      }
+      &-detail {
+        font-size: 17px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      &-save {
+        font-size: 17px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      .button {
+        margin-bottom: 40px;
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .custom_paging {
+    left: 50%;
+    @include transformX;
+    bottom: -95px;
+    position: absolute;
+    li {
+      width: unset;
+      height: unset;
+      display: none;
+      &.slick-active {
+        display: block;
+      }
+      button {
+        width: unset;
+        height: unset;
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 300;
+        color: $text-color;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@mixin blog-xxxlg-xxxxlg {
+  .blog {
+    &__inner {
+      &-footer {
+        max-width: 200px;
+        button {
+          width: 44px;
+          height: 44px;
+          img {
+            width: 14px;
+          }
+        }
+      }
+    }
+    .custom_paging {
+      bottom: -88px;
+      li {
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+@mixin blog-xxlg-xxxlg {
+  .blog {
+    padding: 50px 0 100px;
+    &.events {
+      padding: 50px 0 90px;
+    }
+    &.main {
+      margin-top: -86px;
+      padding: 130px 0 45px;
+    }
+    .title {
+      margin-bottom: 30px;
+    }
+    .custom_paging {
+      bottom: -55px;
+      li {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+    &__inner {
+      &-footer {
+        margin: 25px auto 0 auto;
+        max-width: 200px;
+        button {
+          width: 34px;
+          height: 34px;
+          img {
+            width: 12px;
+          }
+        }
+      }
+    }
+    &Item {
+      &__header {
+        margin-bottom: 20px;
+        padding: 15px 0 20px 0;
+        h4 {
+          height: 56px;
+        }
+      }
+      &__body {
+        padding-bottom: 20px;
+        &-image {
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 17px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+@mixin blog-md-lg {
+  .blog {
+    padding: 50px 0 90px;
+    &.events {
+      padding: 20px 0 70px;
+    }
+    &.main {
+      padding: 80px 0 40px;
+    }
+    &.press {
+      padding: 0 0 60px;
+    }
+    .title {
+      margin-bottom: 20px;
+    }
+    &__inner {
+      .back {
+        bottom: unset;
+        top: calc(100% + 40px);
+      }
+    }
+  }
+}
+@mixin blog-xsm-sm {
+  .blog {
+    &Item {
+      &__body {
+        p {
+          height: 76px;
+        }
+      }
+    }
+  }
+}

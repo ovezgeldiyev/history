@@ -1,0 +1,279 @@
+.winner {
+    &__inner {
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+    .slick {
+        &-slide {
+            height: unset;
+            .winnerItem__slider-image {
+                img {
+                    opacity: 0;
+                    transition: 1s ease;
+                }
+         
+            }
+        }
+        &-active {
+            .winnerItem__slider-image {
+                img {
+                    opacity: 1;
+
+                }
+            }
+        }
+        &-list {
+            margin-bottom: 20px;
+
+        }
+    }
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 200px;
+        min-height: 470px;
+        align-items: flex-start;
+        &__content {
+            width: calc(50% - 40px);
+            max-width: 730px;
+            &-header {
+                margin-bottom: 38px;
+                h6 {
+                    margin-bottom: 10px;
+                }
+                span {
+                    text-align: right;
+                    display: inline-block;
+                    min-width: 20px;
+                    margin-right: 6px;
+                }
+            }
+            p {
+                margin-bottom: 68px;
+            }
+            a {
+                color: $text-color;
+                display: block;
+                text-decoration: underline;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+        &__wrapper {
+            width: calc(50% - 40px);
+            max-width: 810px;
+            position: relative;
+            display: flex !important;
+            .winnerItem__slider {
+                width: 100%;
+                max-width: unset;
+            }
+        }
+        &__slider {
+            width: calc(50% - 40px);
+            max-width: 810px;
+            display: flex !important;
+            &-image {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img {
+                    @include fullImage;
+                    margin-bottom: 40px;
+                }
+                &-rights {
+                    font-size: 13px;
+                    line-height: 17px;
+                    color: $gray-1;
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    @include transition;
+                    &:hover {
+                      opacity: .8;
+                    }
+                }
+            }
+        }
+        &__footer {
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            button {
+                width: 55px;
+                height: 55px;
+                display: flex;
+                z-index: 1;
+                position: relative;
+                cursor: pointer;
+                background: $white;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+                @include transition;
+                &:hover {
+                background: #f7f7f7;
+                }
+                img {
+                width: 18px;
+                }
+            }
+        }
+    }
+    .custom_paging {
+        right: 70px;
+        bottom: -66px;
+        position: absolute;
+        li {
+            width: unset;
+            height: unset;
+            display: none;
+            &.slick-active {
+                display: block;
+            }
+            button {
+                width: unset;
+                height: unset;
+                font-size: 21px;
+                line-height: 28px;
+                font-weight: 300;
+                color: $text-color;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@mixin winner-xxxlg-xxxxlg {
+    .winner {
+        .custom_paging {
+            bottom: -52px;
+            right:60px;
+            li {
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+        &Item {
+            &__footer {
+                max-width: 180px;
+                bottom: -60px;
+                button {
+                    width: 44px;
+                    height: 44px;
+                    img {
+                        width: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin winner-xxlg-xxxlg {
+    .winner {
+        .custom_paging {
+            bottom: -55px;
+            right: 46px;
+            li {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        &Item {
+            &__footer {
+                max-width: 150px;
+                bottom: -60px;
+                button {
+                    width: 34px;
+                    height: 34px;
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin winner-xlg-xxlg {
+    .winner {
+        &Item {
+            &__content {
+                width: calc(50% - 15px);
+            }
+            &__wrapper {
+                width: calc(50% - 15px);
+            }
+        }
+    }
+}
+@mixin winner-lg-xlg {
+    .winner {
+        &Item {
+            flex-wrap: wrap;
+            margin-bottom: 150px;
+            &__content {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 50px;
+                P {
+                    margin-bottom: 40px;
+                }
+            }
+            &__wrapper {
+                width: 100%;
+                max-width: unset;
+                &-image {
+                    max-height: 900px;
+                }
+            }
+        }
+    }
+}
+@mixin winner-sm-md {
+    .winner {
+        &Item {
+            margin-bottom: 120px;
+        }
+    }
+}
+@mixin winner-xsm-sm {
+    .winner {
+        .custom_paging {
+            bottom: -24px;
+            right: 49px;
+            li {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        &Item {
+            margin-bottom: 100px;
+            &__slider {
+                &-image {
+                    img {
+                        margin-bottom: 20px;
+                    }
+                    &-rights {
+                        bottom: 0;
+                        font-size: 7px;
+                        line-height: 9px;
+                      }
+                }
+            }
+            &__footer {
+                bottom: -30px;
+            }
+        }
+    }
+}
